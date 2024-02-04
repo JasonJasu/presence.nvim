@@ -77,7 +77,7 @@ function Presence:setup(...)
 	-- To maintain backwards compatibility, colon syntax will still
 	-- be supported, but dot syntax should be recommended.
 
-	self:reset()
+	Presence:reset()
 	local args = { ... }
 	local options = args[1]
 	if #args == 0 then
@@ -331,7 +331,7 @@ function Presence:call_remote_method(socket, name, args)
 end
 
 function Presence:connect(on_done)
-	self:reset()
+	Presence:reset()
 	self.log:debug("Connecting to Discord...")
 
 	self.is_connecting = true
