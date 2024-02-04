@@ -50,15 +50,6 @@
 -- }
 --
 local Presence = {}
-Presence.is_authorized = false
-Presence.is_authorizing = false
-Presence.is_connected = false
-Presence.is_connecting = false
-Presence.last_activity = {}
-Presence.peers = {}
-Presence.socket = vim.v.servername
-Presence.workspace = nil
-Presence.workspaces = {}
 
 local log = require("lib.log")
 local msgpack = require("deps.msgpack")
